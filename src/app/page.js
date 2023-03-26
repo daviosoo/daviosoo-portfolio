@@ -1,18 +1,31 @@
-import Image from 'next/image'
+import Image from "next/image";
+import Link from "next/link";
+
 import { Inter, Source_Sans_Pro } from "next/font/google";
 
+import profilePicture from "../../public/assets/profilePicture.jpg";
 
-import penguinPhoto from '../../public/assets/adelie_penguin.d48bf94.width-800.1f7b749.jpg'
-import profilePicture from '../../public/assets/profilePicture.jpg'
-import Link from 'next/link';
+const inter = Inter({ subsets: ["latin"] });
+const source_Sans_Pro = Source_Sans_Pro({ subsets: ["latin"], weight: "400" });
 
-const inter = Inter({ subsets: ['latin'] })
-const source_Sans_Pro = Source_Sans_Pro({ subsets: ["latin"], weight: '400' });
+const dayNames = [
+  "Sunday",
+  "Monday",
+  "Tuesday",
+  "Wednesday",
+  "Thursday",
+  "Friday",
+  "Saturday",
+];
+
+const d = new Date();
+
+const dayName = dayNames[d.getDay()];
 
 export default function Home() {
   return (
     <>
-      <header className="flex flex-col items-center">
+      <header className="flex flex-col items-center pt-24">
         <div className="px-1.5 md:px-0 w-11/12 md:w-[42.188rem]">
           <section className="flex flex-row items-center justify-between w-full">
             <div>
@@ -47,7 +60,7 @@ export default function Home() {
         </div>
       </header>
 
-      <main className="flex flex-col items-center">
+      <main className="flex flex-col items-center pb-40">
         <div className="px-1.5 md:px-0 pt-24 w-11/12 md:w-[42.188rem]">
           <section className="w-full">
             <div>
@@ -387,7 +400,7 @@ export default function Home() {
               </div>
 
               <Link href="https://github.com/daviosoo" target={"_blank"}>
-                <div className="flex flex-row items-center mt-12 fade delay11 text-white allProjects">
+                <div className="flex flex-row items-center mt-6 fade delay11 text-white allProjects">
                   All Works
                   <svg
                     stroke="currentColor"
@@ -409,6 +422,24 @@ export default function Home() {
           </section>
         </div>
       </main>
+
+      <footer className="flex flex-col items-center fade delay11">
+        <hr className="w-full border-[#232323]" />
+        <div className="px-1.5 md:px-0 w-11/12 md:w-[42.188rem] flex flex-row justify-center md:justify-between py-4">
+          <Link
+            href="https://es.wikipedia.org/wiki/Medell%C3%ADn"
+            target={"_blank"}
+            className="hidden md:flex"
+          >
+            <p className="text-[#9c9c9c]" style={source_Sans_Pro.style}>
+              Medellín, COL • 2023
+            </p>
+          </Link>
+          <p className="text-[#9c9c9c]" style={source_Sans_Pro.style}>
+            No ads. Happy {dayName}.
+          </p>
+        </div>
+      </footer>
     </>
   );
 }
