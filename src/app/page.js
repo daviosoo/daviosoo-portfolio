@@ -78,14 +78,14 @@ export default function Home() {
               >
                 Feel free to check out my{" "}
                 <Link
-                  className="text-white underline hover:decoration-[#9c9c9c] decoration-2"
+                  className="text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
                   href="/"
                 >
                   CV
                 </Link>
                 , or the {""}
                 <Link
-                  className="text-white underline hover:decoration-[#9c9c9c] decoration-2"
+                  className="text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
                   href="/"
                 >
                   music
@@ -118,7 +118,7 @@ export default function Home() {
                 If you&#39;re ever near the Medellín, Antioquía area, let&#39;s
                 hang out. Looking for new opportunities. Reach out at{" "}
                 <Link
-                  className="text-white underline hover:decoration-[#9c9c9c] decoration-2"
+                  className="text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
                   href="https://twitter.com/daviosood"
                   target={"_blank"}
                 >
@@ -126,7 +126,7 @@ export default function Home() {
                 </Link>{" "}
                 or{" "}
                 <Link
-                  className="text-white underline hover:decoration-[#9c9c9c] decoration-2"
+                  className="text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
                   href="mailto:daviosood@gmail.com"
                 >
                   daviosood@gmail.com
@@ -204,6 +204,206 @@ export default function Home() {
                   <rect x="2" y="9" width="4" height="12"></rect>
                   <circle cx="4" cy="4" r="2"></circle>
                 </svg>
+              </Link>
+            </div>
+          </section>
+        </div>
+
+        <div className="px-1.5 md:px-0 pt-24 w-11/12 md:w-[42.188rem]">
+          <section className="w-full">
+            <div>
+              <h3
+                className="mb-6 font-bold text-white fade delay11"
+                style={inter.style}
+              >
+                Select Works
+              </h3>
+              <div className="fade delay12">
+                <div className="flex flex-row">
+                  <p
+                    className="box-border w-fit text-[#9c9c9c] leading-5  mr-10 md:mr-24"
+                    style={source_Sans_Pro.style}
+                  >
+                    2023
+                  </p>
+
+                  <div>
+                    <div>
+                      <Link
+                        className="font-bold text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
+                        href="https://github.com/daviosoo/daviosoo-portfolio"
+                        target={"_blank"}
+                      >
+                        Davioso portfolio
+                      </Link>
+                      <p
+                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
+                        style={source_Sans_Pro.style}
+                      >
+                        Daviosoo portfolio. Ethos and selected works. Made with
+                        Next JS.
+                      </p>
+                    </div>
+
+                    <div className="mt-6">
+                      <Link
+                        className="font-bold text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
+                        href="https://github.com/daviosoo/Mattelsa"
+                        target={"_blank"}
+                      >
+                        Matelsa APP
+                      </Link>
+                      <p
+                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
+                        style={source_Sans_Pro.style}
+                      >
+                        A mobile APP in progress. Online clothing store.
+                        Building with React Native for iOS & Android.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-row mt-6">
+                  <p
+                    className="box-border w-fit text-[#9c9c9c] leading-5  mr-10 md:mr-24"
+                    style={source_Sans_Pro.style}
+                  >
+                    2022
+                  </p>
+
+                  <div>
+                    <div>
+                      <Link
+                        className="font-bold text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
+                        href="https://therunningfox.netlify.app/"
+                        target={"_blank"}
+                      >
+                        The Running Fox clone
+                      </Link>
+                      <p
+                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
+                        style={source_Sans_Pro.style}
+                      >
+                        The Running Fox website clone. Made with React JS & PHP
+                        API.
+                      </p>
+                    </div>
+
+                    <div className="mt-6">
+                      <Link
+                        className="font-bold text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
+                        href="https://github.com/daviosoo/sales-system-app"
+                        target={"_blank"}
+                      >
+                        Sales system APP
+                      </Link>
+                      <p
+                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
+                        style={source_Sans_Pro.style}
+                      >
+                        A mobile APP work for college. Sales system register.
+                        Made with React Native for iOS & Android.
+                      </p>
+                    </div>
+                    <div className="mt-6">
+                      <Link
+                        className="font-bold text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
+                        href="https://github.com/daviosoo/sales-system-api"
+                        target={"_blank"}
+                      >
+                        Sales system API
+                      </Link>
+                      <p
+                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
+                        style={source_Sans_Pro.style}
+                      >
+                        An API made for mobile APP work college. Sales system
+                        register. Made with Express JS & Mongo DB.
+                      </p>
+                    </div>
+                    <div className="mt-6">
+                      <Link
+                        className="font-bold text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
+                        href="https://daviosoo.github.io/Meeet-WaitList"
+                        target={"_blank"}
+                      >
+                        Meeet waitlist
+                      </Link>
+                      <p
+                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
+                        style={source_Sans_Pro.style}
+                      >
+                        A responsive landing page. Practice project. Made with
+                        pure HTML & CSS.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex flex-row mt-6">
+                  <p
+                    className="box-border w-fit text-[#9c9c9c] leading-5  mr-10 md:mr-24"
+                    style={source_Sans_Pro.style}
+                  >
+                    2021
+                  </p>
+
+                  <div>
+                    <div>
+                      <Link
+                        className="font-bold text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
+                        href="https://daviosoo.github.io/Snipper"
+                        target={"_blank"}
+                      >
+                        Snipper
+                      </Link>
+                      <p
+                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
+                        style={source_Sans_Pro.style}
+                      >
+                        A responsive landing page. Practice project. Made with
+                        pure HTML & CSS.
+                      </p>
+                    </div>
+
+                    <div className="mt-6">
+                      <Link
+                        className="font-bold text-white underline hover:decoration-[#9c9c9c] decoration-[1.5px]"
+                        href="https://daviosoo.github.io/MazaSketchFinal"
+                        target={"_blank"}
+                      >
+                        MazaSketch
+                      </Link>
+                      <p
+                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
+                        style={source_Sans_Pro.style}
+                      >
+                        A website in progress. Portfolio for MazaSketch client.
+                        Building with pure HTLM, CSS & JS.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <Link href="https://github.com/daviosoo" target={"_blank"}>
+                <div className="flex flex-row items-center mt-12 fade delay11 text-white allProjects">
+                  All Works
+                  <svg
+                    stroke="currentColor"
+                    fill="none"
+                    strokeWidth="2"
+                    viewBox="0 0 24 24"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    height="1em"
+                    width="1em"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </div>
               </Link>
             </div>
           </section>
