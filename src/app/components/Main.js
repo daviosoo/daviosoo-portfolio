@@ -1,12 +1,13 @@
 import Link from "next/link";
 
 import { Inter, Source_Sans_Pro } from "next/font/google";
-import WaveSvg from "../../../public/svgComponents/WaveSvg";
-import GithubSVG from "../../../public/svgComponents/GithubSvg";
-import TwitterSvg from "../../../public/svgComponents/TwitterSvg";
-import PortfolioSvg from "../../../public/svgComponents/PortfolioSvg";
-import LinkedinSvg from "../../../public/svgComponents/LinkedinSvg";
-import ArrowSvg from "../../../public/svgComponents/ArrowSvg";
+
+import WaveSvg from "./svgComponents/WaveSvg";
+import GithubSVG from "./svgComponents/GithubSvg";
+import TwitterSvg from "./svgComponents/TwitterSvg";
+import PortfolioSvg from "./svgComponents/PortfolioSvg";
+import LinkedinSvg from "./svgComponents/LinkedinSvg";
+import ArrowSvg from "./svgComponents/ArrowSvg";
 
 const inter = Inter({ subsets: ["latin"] });
 const source_Sans_Pro = Source_Sans_Pro({ subsets: ["latin"], weight: "400" });
