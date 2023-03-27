@@ -46,18 +46,18 @@ function Main() {
                 Feel free to check out my{" "}
                 <Link
                   className="text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                  href="/"
+                  href="https://drive.google.com/file/d/1sdQ53LSCNRCrBzTRpTerFMdlmOQ4WVyE/view?usp=sharing" target={'_blank'}
                 >
                   CV
                 </Link>
-                , or the {""}
+                . {/* or the {""}
                 <Link
                   className="text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
                   href="/"
                 >
                   music
                 </Link>{" "}
-                I&#39;ve been listening to.
+                I&#39;ve been listening to. */}
               </p>
             </div>
           </section>
@@ -90,17 +90,16 @@ function Main() {
               </p>
             </div>
             <div className="flex flex-row mt-6 fade delay10">
-
               <Link href="https://github.com/daviosoo" target={"_blank"}>
                 <GithubSVG />
               </Link>
 
               <Link href="https://twitter.com/daviosood" target={"_blank"}>
-               <TwitterSvg />
+                <TwitterSvg />
               </Link>
 
               <Link href="https://daviosoo.site" target={"_blank"}>
-               <PortfolioSvg />
+                <PortfolioSvg />
               </Link>
 
               <Link
@@ -109,7 +108,6 @@ function Main() {
               >
                 <LinkedinSvg />
               </Link>
-
             </div>
           </section>
         </div>
@@ -297,7 +295,6 @@ function Main() {
                   <ArrowSvg />
                 </div>
               </Link>
-              
             </div>
           </section>
         </div>
