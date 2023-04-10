@@ -22,7 +22,7 @@ function Main() {
                 className="mb-6 font-bold text-[#e5e5e5] fade delay4"
                 style={inter.style}
               >
-                Ethos
+                About
               </h3>
               <p
                 className="box-border w-fit text-[#9c9c9c] leading-5 fade delay5"
