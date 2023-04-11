@@ -8,6 +8,7 @@ import TwitterSvg from "./svgComponents/TwitterSvg";
 import PortfolioSvg from "./svgComponents/PortfolioSvg";
 import LinkedinSvg from "./svgComponents/LinkedinSvg";
 import ArrowSvg from "./svgComponents/ArrowSvg";
+import SingleWork from "./SingleWork";
 
 const inter = Inter({ subsets: ["latin"] });
 const source_Sans_Pro = Source_Sans_Pro({ subsets: ["latin"], weight: "400" });
@@ -46,18 +47,12 @@ function Main() {
                 Feel free to check out my{" "}
                 <Link
                   className="text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                  href="https://drive.google.com/file/d/1sdQ53LSCNRCrBzTRpTerFMdlmOQ4WVyE/view?usp=sharing" target={'_blank'}
+                  href="https://drive.google.com/file/d/1sdQ53LSCNRCrBzTRpTerFMdlmOQ4WVyE/view?usp=sharing"
+                  target={"_blank"}
                 >
                   CV
                 </Link>
-                . {/* or the {""}
-                <Link
-                  className="text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                  href="/"
-                >
-                  music
-                </Link>{" "}
-                I&#39;ve been listening to. */}
+                .
               </p>
             </div>
           </section>
@@ -132,37 +127,23 @@ function Main() {
 
                   <div>
                     <div>
-                      <Link
-                        className="font-bold text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                        href="https://github.com/daviosoo/daviosoo-portfolio"
-                        target={"_blank"}
-                      >
-                        Davioso portfolio
-                      </Link>
-                      <p
-                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
-                        style={source_Sans_Pro.style}
-                      >
-                        Daviosoo portfolio. Ethos and selected works. Made with
-                        Next JS.
-                      </p>
+                      <SingleWork
+                        title={"Davioso portfolio"}
+                        link={"https://github.com/daviosoo/daviosoo-portfolio"}
+                        description={
+                          "Daviosoo portfolio. Ethos and selected works. Made with Next JS 13."
+                        }
+                      />
                     </div>
 
                     <div className="mt-6">
-                      <Link
-                        className="font-bold text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                        href="https://github.com/daviosoo/Mattelsa"
-                        target={"_blank"}
-                      >
-                        Matelsa APP
-                      </Link>
-                      <p
-                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
-                        style={source_Sans_Pro.style}
-                      >
-                        A mobile APP in progress. Online clothing store.
-                        Building with React Native for iOS & Android.
-                      </p>
+                      <SingleWork
+                        title={"Matelsa APP"}
+                        link={"https://github.com/daviosoo/Mattelsa"}
+                        description={
+                          "A mobile APP in progress. Online clothing store. Building with React Native for iOS & Android."
+                        }
+                      />
                     </div>
                   </div>
                 </div>
@@ -177,72 +158,47 @@ function Main() {
 
                   <div>
                     <div>
-                      <Link
-                        className="font-bold text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                        href="https://therunningfox.netlify.app/"
-                        target={"_blank"}
-                      >
-                        The Running Fox clone
-                      </Link>
-                      <p
-                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
-                        style={source_Sans_Pro.style}
-                      >
-                        The Running Fox website clone. Made with React JS & PHP
-                        API.
-                      </p>
+                      <SingleWork
+                        title={"The Running Fox clone"}
+                        link={"https://therunningfox.netlify.app"}
+                        description={
+                          "The Running Fox website clone. Made with React JS & PHP API."
+                        }
+                      />
                     </div>
 
                     <div className="mt-6">
-                      <Link
-                        className="font-bold text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                        href="https://github.com/daviosoo/sales-system-app"
-                        target={"_blank"}
-                      >
-                        Sales system APP
-                      </Link>
-                      <p
-                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
-                        style={source_Sans_Pro.style}
-                      >
-                        A mobile APP work for college. Sales system register.
-                        Made with React Native for iOS & Android.
-                      </p>
+                      <SingleWork
+                        title={"Sales system APP"}
+                        link={"https://github.com/daviosoo/sales-system-app"}
+                        description={
+                          "A mobile APP work for college. Sales system register. Made with React Native for iOS & Android."
+                        }
+                      />
                     </div>
+
                     <div className="mt-6">
-                      <Link
-                        className="font-bold text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                        href="https://github.com/daviosoo/sales-system-api"
-                        target={"_blank"}
-                      >
-                        Sales system API
-                      </Link>
-                      <p
-                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
-                        style={source_Sans_Pro.style}
-                      >
-                        An API made for mobile APP work college. Sales system
-                        register. Made with Express JS & Mongo DB.
-                      </p>
+                      <SingleWork
+                        title={"Sales system API"}
+                        link={"https://github.com/daviosoo/sales-system-api"}
+                        description={
+                          "An API made for mobile APP work college. Sales system register. Made with Express JS & Mongo DB."
+                        }
+                      />
                     </div>
+
                     <div className="mt-6">
-                      <Link
-                        className="font-bold text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                        href="https://daviosoo.github.io/Meeet-WaitList"
-                        target={"_blank"}
-                      >
-                        Meeet waitlist
-                      </Link>
-                      <p
-                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
-                        style={source_Sans_Pro.style}
-                      >
-                        A responsive landing page. Practice project. Made with
-                        pure HTML & CSS.
-                      </p>
+                      <SingleWork
+                        title={"Meeet waitlist"}
+                        link={"https://daviosoo.github.io/Meeet-WaitList"}
+                        description={
+                          "A responsive landing page. Practice project. Made with pure HTML & CSS."
+                        }
+                      />
                     </div>
                   </div>
                 </div>
+
                 <div className="flex flex-row mt-6">
                   <p
                     className="box-border w-fit text-[#9c9c9c] leading-5  mr-10 md:mr-24"
@@ -253,37 +209,23 @@ function Main() {
 
                   <div>
                     <div>
-                      <Link
-                        className="font-bold text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                        href="https://daviosoo.github.io/Snipper"
-                        target={"_blank"}
-                      >
-                        Snipper
-                      </Link>
-                      <p
-                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
-                        style={source_Sans_Pro.style}
-                      >
-                        A responsive landing page. Practice project. Made with
-                        pure HTML & CSS.
-                      </p>
+                      <SingleWork
+                        title={"Snipper"}
+                        link={"https://daviosoo.github.io/Snipper"}
+                        description={
+                          "A responsive landing page. Practice project. Made with pure HTML & CSS."
+                        }
+                      />
                     </div>
 
                     <div className="mt-6">
-                      <Link
-                        className="font-bold text-[#e5e5e5] underline decoration-[#9c9c9c] hover:decoration-[#6d6d6d] decoration-[1.5px]"
-                        href="https://daviosoo.github.io/MazaSketchFinal"
-                        target={"_blank"}
-                      >
-                        MazaSketch
-                      </Link>
-                      <p
-                        className="box-border w-fit text-[#9c9c9c] mt-2 leading-5"
-                        style={source_Sans_Pro.style}
-                      >
-                        A website in progress. Portfolio for MazaSketch client.
-                        Building with pure HTLM, CSS & JS.
-                      </p>
+                      <SingleWork
+                        title={"MazaSketch"}
+                        link={"https://daviosoo.github.io/MazaSketchFinal"}
+                        description={
+                          "A website in progress. Portfolio for MazaSketch client. Building with pure HTLM, CSS & JS."
+                        }
+                      />
                     </div>
                   </div>
                 </div>
