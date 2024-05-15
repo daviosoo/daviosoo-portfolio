@@ -4,8 +4,6 @@ import { Inter, Source_Sans_Pro } from "next/font/google";
 
 import WaveSvg from "./svgComponents/WaveSvg";
 import GithubSVG from "./svgComponents/GithubSvg";
-import TwitterSvg from "./svgComponents/TwitterSvg";
-import PortfolioSvg from "./svgComponents/PortfolioSvg";
 import LinkedinSvg from "./svgComponents/LinkedinSvg";
 import ArrowSvg from "./svgComponents/ArrowSvg";
 import SingleWork from "./SingleWork";
@@ -29,14 +27,13 @@ function Main() {
                 className="box-border w-fit text-[#9c9c9c] leading-5 fade delay5"
                 style={source_Sans_Pro.style}
               >
-                Painting beautiful interfaces. Building tools and polished user
-                interactions.
+                Making functional things. Building useful features to user interactions.
               </p>
               <p
                 className="box-border mt-3 w-fit text-[#9c9c9c] leading-5 fade delay6"
                 style={source_Sans_Pro.style}
               >
-                Following passion, living what I love. Enjoys lifting weights,
+                Following passion, living what I love. Enjoys
                 evening walks, mobile, video games, VSCode, and other random
                 computer things.
               </p>
@@ -89,14 +86,6 @@ function Main() {
                 <GithubSVG />
               </Link>
 
-              <Link href="https://twitter.com/daviosood" target={"_blank"}>
-                <TwitterSvg />
-              </Link>
-
-              <Link href="https://daviosoo.site" target={"_blank"}>
-                <PortfolioSvg />
-              </Link>
-
               <Link
                 href="https://www.linkedin.com/in/andres-david-osorio-zapata-2bb007213/"
                 target={"_blank"}
@@ -118,6 +107,28 @@ function Main() {
               </h3>
               <div className="fade delay12">
                 <div className="flex flex-row">
+                  <p
+                    className="box-border w-fit text-[#9c9c9c] leading-5  mr-10 md:mr-24"
+                    style={source_Sans_Pro.style}
+                  >
+                    2024
+                  </p>
+
+                  <div>
+                    <div>
+                      <SingleWork
+                        title={"La Cantina Radio"}
+                        link={"https://play.google.com/store/apps/details?id=com.latino.lacantinaradio"}
+                        description={
+                          "A mobile APP for a radio program that allows user hear the live and stream program. Made with React Native Android."
+                        }
+                      />
+                    </div>
+
+                  </div>
+                </div>
+
+                <div className="flex flex-row mt-6">
                   <p
                     className="box-border w-fit text-[#9c9c9c] leading-5  mr-10 md:mr-24"
                     style={source_Sans_Pro.style}

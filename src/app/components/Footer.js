@@ -28,7 +28,7 @@ function Footer() {
             className="hidden md:flex"
           >
             <p className="text-[#9c9c9c]" style={source_Sans_Pro.style}>
-              Medellín, COL • 2023
+              Medellín, COL • 2024
             </p>
           </Link>
           <p className="text-[#9c9c9c]" style={source_Sans_Pro.style}>
